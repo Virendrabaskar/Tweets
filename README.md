@@ -1,7 +1,9 @@
 # Tweets
 Post tweets and send DM in twitter from command line.
 
-`perl tweet.pl --account @user_name --post "Hello World !"`
+`perl tweet.pl --authorize @user_name`
+
+`perl tweet.pl --user @user_name --post "Hello World !"`
 
 `perl tweet.pl --help`
 
@@ -12,6 +14,7 @@ Post tweets and send DM in twitter from command line.
 1. Config::Any
 1. FindBin
 1. Getopt::Long
+1. Data::Dumper
 
 
 To install perl module
@@ -20,7 +23,7 @@ To install perl module
 
 #####Twitter Keys and Access Tokens
 
-Create app here https://apps.twitter.com/
+Create an app and get access keys from here https://apps.twitter.com/
 
 
 #####How to use
@@ -31,3 +34,5 @@ Create app here https://apps.twitter.com/
   `sudo ln -s <path>/tweet.pl /usr/bin/tweet`
    
   `sudo ln -s <path>/config.pl /usr/bin/config.pl`
+
+  `tweet --help`
